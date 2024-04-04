@@ -15,7 +15,7 @@ export const ProductList = () => {
 
 
     async function getData() {
-        let result = await fetch("http://localhost:5000/api/product/product",{
+        let result = await fetch("https://sunbonnet-pelican.cyclic.app/api/product/product",{
             headers : {
                 authorization : JSON.parse(localStorage.getItem("token"))
             }

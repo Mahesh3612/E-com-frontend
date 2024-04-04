@@ -20,7 +20,7 @@ useEffect(()=>{
 
 
 async function getData(){
-let result = await axios.get(`http://localhost:5000/api/user/profile/${id}`)
+let result = await axios.get(`https://sunbonnet-pelican.cyclic.app/api/user/profile/${id}`)
 setData(result.data)
 }
 

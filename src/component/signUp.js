@@ -15,7 +15,7 @@ setUser({...user,[name]:value})
 
     async function handleRegister (){
 
-        let result = await fetch("http://localhost:5000/api/user/register",{
+        let result = await fetch("https://sunbonnet-pelican.cyclic.app/api/user/register",{
             method:"post",
             body:JSON.stringify(user),
             headers:{

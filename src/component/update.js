@@ -22,7 +22,7 @@ useEffect(()=>{
 
 
 async function getData(){
-    let result = await fetch(`http://localhost:5000/api/product/product/${id}`) 
+    let result = await fetch(`https://sunbonnet-pelican.cyclic.app/api/product/product/${id}`) 
     result = await result.json();
     setName(result.name)
     setCategory(result.category)
@@ -32,7 +32,7 @@ async function getData(){
 
 
     async function updateProduct(){
-        let result = await fetch(`http://localhost:5000/api/product/product/${id}`,{
+        let result = await fetch(`https://sunbonnet-pelican.cyclic.app/api/product/product/${id}`,{
             method:"put",
             body:JSON.stringify({name,category,company,price}),
             headers:{

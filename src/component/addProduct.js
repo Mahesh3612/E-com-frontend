@@ -18,7 +18,7 @@ import { useState } from "react"
             setError(true)
             return false
         }
-        let result = await fetch("http://localhost:5000/api/product/addproduct",{
+        let result = await fetch("https://sunbonnet-pelican.cyclic.app/api/product/addproduct",{
             method:"post",
             body:JSON.stringify(data),
             headers:{

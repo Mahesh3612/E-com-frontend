@@ -21,7 +21,7 @@ const navigate = useNavigate()
             }
 
             async function handleLogin(){
-                let result = await fetch("http://localhost:5000/api/user/login",{
+                let result = await fetch("https://sunbonnet-pelican.cyclic.app/api/user/login",{
                     method:"post",
                     body:JSON.stringify(user),
                     headers:{
